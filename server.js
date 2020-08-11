@@ -6,4 +6,4 @@ app.use(express.static(__dirname + '/dist/angular-tour-of-heroes'));
 app.get('/*', function(req, res) {
     res.sendfile(path.join(__dirname + '/dist/angular-tour-of-heroes/index.html'));
 });
-app.listen(procress.env.PORT || 8080);
+app.listen(process.env.PORT || 8080);
